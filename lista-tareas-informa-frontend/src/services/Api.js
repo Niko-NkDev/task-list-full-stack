@@ -1,7 +1,7 @@
 import axios from 'axios'; /*encargado de hacer consumo de api rest*/
 
 
-const API_URL = 'http://localhost:8080/api/tasks';
+const API_URL = 'https://lista-tareas-informa-backend-latest.onrender.com/api/tasks';
 
 export const getTasks = () => axios.get(API_URL);
 export const createTask = (task) => axios.post(API_URL, task);
